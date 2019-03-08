@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 	curl \
 	gnupg \
 	--no-install-recommends \
-	&& curl -sL https://deb.nodesource.com/setup_9.x | bash - \
+	&& curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 	&& apt-get install -y nodejs --no-install-recommends \
 	&& curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
 	&& echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
